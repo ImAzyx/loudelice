@@ -26,6 +26,7 @@
   h2 {
     font-size: 50px;
     line-height: 50px;
+    color: #2c2c2c;
   }
 
   h3 {
@@ -194,10 +195,17 @@
   
   .social {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     padding: 10px;
     gap: 20px;
+  }
+
+  .social a {
+    color: #2c2c2c;
+    font-weight: 300;
+  }
+
+  .credits p {
+    font-size: 13px;
   }
   .navbar-center a {
     margin: 0 20px;
@@ -380,6 +388,10 @@
     z-index: 1;
   }
 
+  .accordion {
+    display: none;
+  }
+
 
   @media only screen and (max-width: 800px) {
     
@@ -555,6 +567,10 @@
       padding: 0 10px;
     }
 
+    .destinations {
+      display: none;
+    }
+
     .topfooter p, .topfooter h3 {
       text-align: center;
     }
@@ -603,6 +619,45 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      gap: 20px;
+    }
+
+    .credits p {
+      padding-top: 20px;
+    }
+
+    .accordion {
+      display: contents;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .accordion-header {
+      font-weight: bold;
+      cursor: pointer;
+      padding: 10px;
+      outline: 1px solid rgba(0,0,0,0.2);
+      border-radius: 100px;
+    }
+    
+    .accordion p {
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    .accordion-body {
+      display: none;
+    }
+  
+    .accordion-body.visible {
+      display: block;
     }
 
 }
