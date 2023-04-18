@@ -6,11 +6,13 @@
     <title>Loudelice - Foodtruck Normand aux menus variés</title>
     <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css" rel="stylesheet">
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   </head>
   <body>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Retour en haut</button>
     <div class="container">
         <div class="header">
             <div class="brand">
@@ -21,13 +23,13 @@
                     <img src="public/images/logo-blanc.svg">
                 </div>
                 <div class="navbar-center">
-                    <a href="#">Horaires</a>
-                    <a href="#">A propos</a>
-                    <a href="#">Menu</a>
-                    <a href="#">Nous contacter</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#planning">Horaires</a>
+                    <a href="#about">A propos</a>
+                    <a href="#contact">Nous contacter</a>
                 </div>
                 <div class="bouton">
-                  <button>Réserver</button>
+                  <button onclick="scrollToContact()">Réserver</button>
                 </div>
               </nav>
             <div class="info-header">
@@ -35,7 +37,7 @@
                 <p>Loudelice est un foodtruck qui offre une pause
                     de calme avec des plats simples et délicieux.</p>
                 <div class="bouton">
-                    <button>Réserver dès maintenant</button>
+                    <button onclick="scrollToContact()">Réserver dès maintenant</button>
                 </div>
                 <img src="public/images/food.png">
             </div>
@@ -44,19 +46,22 @@
             <h1>Commandez à emporter. Offrez à
             vos clients une nourriture variée.</h1>
             <div class="nbouton">
-                <button>Réserver dès maintenant</button>
+                <button onclick="scrollToContact()">Réserver dès maintenant</button>
             </div>
         </div>
-        <div class="menus">
+        <div class="menus" id="menu">
             <h1>3 menus pour remplir votre estomac.</h1>
             <p>Choisissez parmi les plats innombrables 
                 français et italiens et laissez-vous tenter.</p>
             <div class="bouton">
-                <button>Réserver dès maintenant</button>
+                <button onclick="scrollToContact()">Réserver dès maintenant</button>
             </div>
             <img src="public/images/menus.png">
         </div>
-        <div class="map">
+        <div class="map" id="planning">
+            <div class="stickers">
+                <img src="public/images/stickers.svg">
+            </div>
             <img src="public/images/map.png">
             <div class="map-info">
                 <h2>Retrouvez nous en ville !</h2>
@@ -77,7 +82,7 @@
                 </div>
             </div>
         </div>
-        <div class="carte">
+        <div class="carte" id="about">
             <div class="carte-info">
                 <h2>Un foodtruck avec une carte variée</h2>
                 <p>D’innombrables plats français et italiens.
@@ -87,7 +92,7 @@
                     gâteaux préparés avec amour vous rassasieront
                     pendant la pause.</p>
                 <div class="nbouton">
-                    <button>Réserver</button>
+                    <button onclick="scrollToContact()">Réserver</button>
                 </div>
             </div>
             <img src="public/images/plate.png">
@@ -105,11 +110,14 @@
                     autres jours, nous serions heureux de vous 
                     servir.</p>
                 <div class="nbouton">
-                    <button>Réserver</button>
+                    <button onclick="scrollToContact()">Réserver</button>
                 </div>
             </div>
         </div>
-        <form>
+        <form id="contact">
+            <div class="stickers_">
+                <img src="public/images/stickers_.svg">
+            </div>
             <div class="form-info">
                 <h2>Réservez, n'attendez plus.</h2>
                 <p>Envoyez nous un message ou contactez nous au 06 34 08 80 72</p>    
@@ -140,7 +148,7 @@
                 <button type="submit">Envoyer le message</button>
             </div>
         </form>
-        <div class="footer">
+        <div class="footer" id="footer">
             <div class="topfooter">
                 <img src="public/images/logo.svg">
                 <div class="links">
@@ -165,5 +173,28 @@
             </div>
         </div>
     </div>
-  </body>
+    <script>
+        function scrollToContact() {
+          var element = document.getElementById("contact");
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+
+        var mybutton = document.getElementById("topBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+    </body>
 </html>

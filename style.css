@@ -2,6 +2,10 @@
        margin: 0; 
     }
     
+    html {
+      scroll-behavior: smooth;
+    }
+    
     body {
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -329,9 +333,37 @@
   }
 
 
+  #topBtn {
+    display: none; /* Hide the button initially */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #F8854A;
+    color: white;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    padding: 15px;
+    border-radius: 100px;
+  }
+  
+  #topBtn:hover {
+    background-color: #e1743e;
+  }
 
+  .stickers {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
 
-
+  .stickers_ {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
 
 
   @media only screen and (max-width: 800px) {
@@ -409,7 +441,7 @@
         margin-bottom: 30px;
         gap: 30px;
       }
-    
+      
       .map-info {
         width: 100%;
         display: flex;
@@ -539,6 +571,10 @@
       display: flex;
       flex-direction: column;
       gap: 3px;
+    }
+
+    .stickers, .stickers_ {
+      display: none;
     }
 
 }
