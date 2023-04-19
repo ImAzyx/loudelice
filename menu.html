@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nos Menus - Loudelice, Foodtruck Normand aux menus variés</title>
+    <link rel="shortcut icon" type="image/png" href="public/images/favicon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Retour en haut</button>
+    <div class="container">
+        <div class="header">
+            <nav class="navbar">
+                <div class="brand">
+                    <a href="index.html"><img src="public/images/logo-blanc.svg" href="index.html"></a>
+                </div>
+                <div class="navbar-center">
+                    <a href="menu.html">Menu</a>
+                    <a href="index.html#planning">Horaires</a>
+                    <a href="index.html#about">A propos</a>
+                    <a href="#contact">Nous contacter</a>
+                </div>
+                <div class="burger-content">
+                    <a href="menu.html">Menu</a>
+                    <a href="index.html#planning">Horaires</a>
+                    <a href="index.html#about">A propos</a>
+                    <a href="#contact">Nous contacter</a>
+                </div>
+                <div class="bouton">
+                  <button onclick="scrollToContact()">Réserver</button>
+                </div>
+                <div class="burger">
+                    <a class="ri-menu-4-fill"></a>
+                </div>
+              </nav>
+            <div class="info-header">
+                <h1>L'heure est à la régalade !</h1>
+                <p>Découvrez notre menu, composé de délicieuses pizzas,
+                     paninis, salades et de desserts faits maison.</p>
+                <img src="public/images/menus.png">
+            </div>
+        </div>
+        <div class="menu-shortcut">
+            <p><a href="#pizzas">Nos Pizzas</a></p>
+            <p><a href="#paninis">Nos Paninis</a></p>
+            <p><a href="#sandwichs">Nos Sandwichs</a></p>
+            <p><a href="#rotollos">Nos Rotollos</a></p>
+            <p><a href="#salades">Nos Salades</a></p>
+            <p><a href="#complements">Nos Compléments</a></p>
+        </div>
+        <div class="carte-menu" id="pizzas">
+            <img src="public/pictos/pizzas.png">
+            <h2>Nos Pizzas</h2>
+            <p><span class="price">Formule midi [7€] </span><span class="name">1 Pizza (20cm) + 1 Boisson ou 1 Dessert</span></p>
+            <div class="container-menu">
+                <div class="menu-left">
+                    <h3>Base Sauce Tomate (20cm/31cm)</h3>
+                    <div class="menu-item">
+                        <p><span class="name">Margherita</span> <span class="price"> (5€/9€)</span></p>
+                        <p>Sauce Tomate, Mozzarella, Huile d’Olive au Basilic, Origan.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Régina</span> <span class="price"> (6€/11€)</span></p>
+                        <p>Sauce Tomate, Mozzarella, Jambon blanc, Champignons, Origan.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Végétarienne</span> <span class="price"> (6€/11€)</span></p>
+                        <p>Sauce Tomate, Mozzarella, Champignons, Tomates Cerises, Roquette, Origan.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">César</span> <span class="price"> (6.5€/12€)</span></p>
+                        <p>Sauce Tomate, Mozzarella, Chorizo, Merguez, Poivrons, Origan.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Indienne</span> <span class="price"> (6.5€/12.5€)</span></p>
+                        <p>Sauce Tomate, Mozzarella, Poulet mariné, Oignons, Poivrons, Sauce Curry, Origan.</p>
+                    </div>
+                </div>
+                <div class="menu-right">
+                    <div class="menu-item">
+                        <p><span class="name">Calzonne</span> <span class="price"> (7€/13€)</span></p>
+                        <p>(Chausson ou ouverte) Sauce Tomate, Mozzarella, Champignons, Oeuf, Persillade, Origan, Jambon blanc.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Texane</span> <span class="price"> (7€/13€)</span></p>
+                        <p>Sauce Tomate, Mozzarella, Viande hachée fraîche, Oignons, Poivrons, Sauce Barbecue ou Cajun.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Fermière</span> <span class="price"> (7€/13€)</span></p>
+                        <p>Sauce Tomate, Mozzarella, Poulet mariné, Lardons, Oignons, Crème, Origan.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Burger</span> <span class="price"> (7.5€/14€)</span></p>
+                        <p>Sauce Tomate, Mozzarella, Pommes de Terre, Viande hachée fraîche, Cheddar, Sauce Hamburger, Origan.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Loudelice</span> <span class="price"> (8€/15€)</span></p>
+                        <p>Sauce Tomate, Mozzarella, Viande hachée fraîche, Merguez, Poulet mariné, Gruyère, Oeuf, Origan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-menu">
+                <div class="menu-left">
+                    <h3>Base Crème (20cm/31cm)</h3>
+                    <div class="menu-item">
+                        <p><span class="name">Normande</span> <span class="price"> (6.5€/12.5€)</span></p>
+                        <p>Crème fraîche, Mozzarella, Andouille de de Bretagne, Camembert, Origan.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Salmone</span> <span class="price"> (7€/13€)</span></p>
+                        <p>Crème fraîche, Mozzarella, Saumon fumé, Oignons, Persillade, Origan, Citron.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Tartiflette</span> <span class="price"> (7.5€/14€)</span></p>
+                        <p>Crème fraîche, Mozzarella, Pommes de Terre, Lardons, Oignons, Fromage à Tartiflette, Origan.</p>
+                    </div>
+                </div>
+                <div class="menu-right">
+                    <div class="menu-item">
+                        <p><span class="name">Cauchoise</span> <span class="price"> (6.5€/112.5€)</span></p>
+                        <p>Crème fraîche, Mozzarella, Viande hachée fraîche, Camembert, Oeuf, Origan.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Neufchâtelloise</span> <span class="price"> (8€/15€)</span></p>
+                        <p>Crème fraîche, Mozzarella, Pommes de Terre, Jambon blanc, Neufchâtel, Oeuf, Origan.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Forestière</span> <span class="price"> (8.5€/17€)</span></p>
+                        <p>Crème fraîche, Champignons de Paris, Jambon Serrano, Pécorino à la Truffe, (Fromage de Brebis italien à la Truffe), Origan, Roquette. hors formule</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-menu">
+                <div class="menu-left">
+                    <h3>For the Cheese Lovers (20cm/31cm)</h3>
+                    <div class="menu-item">
+                        <p><span class="name">4 Fromages</span> <span class="price"> (7€/13€)</span></p>
+                        <p>Sauce Tomate, Mozzarella, Camembert, Chèvre, Gorgonzola, Origan.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Mielleuse</span> <span class="price"> (7€/13€)</span></p>
+                        <p>Sauce Tomate, Mozzarella, Chèvre, Lardons, Miel, Origan.</p>
+                    </div>
+                </div>
+                <div class="menu-right">
+                    <div class="menu-item">
+                        <p><span class="name">Savoyarde</span> <span class="price"> (7.5€/14€)</span></p>
+                        <p>Sauce Tomate, Mozzarella, Pommes de Terre, Fromage à Tartiflette, Jambon Serrano, Huile d’Olive au Basilic, Origan.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Del Sol</span> <span class="price"> (8.5€/16€)</span></p>
+                        <p>Sauce Tomate, Mozzarella, Tomates Cerises, Grana Padano (Parmesan), Jambon Serrano, Huile d’Olive au Basilic, Origan, Roquette.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carte-menu" id="paninis">
+            <img src="public/pictos/paninis.png">
+            <h2>Nos Paninis</h2>
+            <p><span class="price">Formule midi [6€] </span><span class="name">1 Panini + 1 Boisson ou 1 Dessert</span></p>
+            <div class="container-menu">
+                <div class="menu-left">
+                    <div class="menu-item">
+                        <p><span class="name">Jambon</span> <span class="price"> (4.2€)</span></p>
+                        <p>Sauce Tomate, Mozzarella, Jambon blanc, Gruyère.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Andouille</span> <span class="price"> (4.4€)</span></p>
+                        <p>Crème, fraîche, Mozzarella, Andouille, Camembert.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Fromage</span> <span class="price"> (4.6€)</span></p>
+                        <p>Sauce Tomate, Mozzarella, Chèvre, Camembert, Gruyère.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Poulet-Curry</span> <span class="price"> (4.8€/12€)</span></p>
+                        <p>Sauce Curry, Mozzarella, Tomates, Poulet mariné, Gruyère.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Savoyard</span> <span class="price"> (4.9€)</span></p>
+                        <p>Crème fraîche, Mozzarella, Jambon Serrano, Fromage à Tartiflette, Gruyère, Huile d’Olive au Basilic.</p>
+                    </div>
+                </div>
+                <div class="menu-right">
+                    <div class="menu-item">
+                        <p><span class="name">Burger</span> <span class="price"> (5.1€)</span></p>
+                        <p>Sauce Hamburger, Mozzarella, Pommes de Terre, Viande hachée fraîche, Cheddar, Gruyère.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Tartiflette</span> <span class="price"> (5.2€)</span></p>
+                        <p>Crème fraîche, Mozzarella, Pommes de Terre, Lardons, Oignons, Fromage à Tartiflette.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Merguez-Poulet</span> <span class="price"> (5.2€)</span></p>
+                        <p>Sauce Cajun, Mozzarella, Merguez, Poulet mariné, Gruyère.</p>
+                    </div>
+                    <div class="menu-item">
+                        <p><span class="name">Saumon</span> <span class="price"> (5.5€)</span></p>
+                        <p>Crème fraîche, Mozzarella, Saumon fumé, Gruyère, Persillade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-doubled">
+            <div class="carte-menu" id="sandwichs">
+                <p>Uniquement le midi</p>
+                <img src="public/pictos/sandwich.png">
+                <h2>Nos Sandwichs</h2>
+                <p><span class="price">Formule midi [6€] </span><span class="name">1 Sandwich + 1 Boisson ou 1 Dessert</span></p>
+                <div class="container-menu">
+                    <div class="menu-left">
+                        <div class="menu-item">
+                            <p><span class="name">Poulet</span> <span class="price"> (5€)</span></p>
+                            <p>Mayonnaise, Poulet mariné, Tomate, Oeuf, Salade.</p>
+                        </div>
+                        <div class="menu-item">
+                            <p><span class="name">Thon</span> <span class="price"> (5€)</span></p>
+                            <p>Mayonnaise, Thon, Tomate, Oeuf, Salade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carte-menu" id="rotollos">
+                <p>Nouveauté | Gros Wraps</p>
+                <img src="public/pictos/rotollos.png">
+                <h2>Nos Rotollos</h2>
+                <p><span class="price">Formule midi [7.5€] </span><span class="name">1 Rotollo + 1 Boisson ou 1 Dessert</span></p>
+                <div class="container-menu">
+                    <div class="menu-left">
+                        <div class="menu-item">
+                            <p><span class="name">Jambon-Parmesan</span> <span class="price"> (6.5€)</span></p>
+                            <p>Sauce Tomate, Mozzarella, Huile d’Olive au Basilic, Jambon blanc, Grana Padano, Salade, Tomates Cerises, Origan.</p>
+                        </div>
+                        <div class="menu-item">
+                            <p><span class="name">Poulet</span> <span class="price"> (7€)</span></p>
+                            <p>Sauce Tomate, Huile d’Olive au Basilic, Tomates Cerises, Mozzarella, Poulet mariné, Sauce Curry, Salade, Origan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-doubled">
+            <div class="carte-menu" id="salades">
+                <p>Uniquement le midi</p>
+                <img src="public/pictos/salades.png">
+                <h2>Nos Salades</h2>
+                <p><span class="price">Formule midi [7€] </span><span class="name">1 Salade + 1 Boisson ou 1 Dessert</span></p>
+                <div class="container-menu">
+                    <div class="menu-left">
+                        <div class="menu-item">
+                            <p><span class="name">Paysanne</span> <span class="price"> (6€)</span></p>
+                            <p>Salade, Tomate, Oeuf, Mozzarella, Poulet mariné.</p>
+                        </div>
+                        <div class="menu-item">
+                            <p><span class="name">Lardons-Chèvres</span> <span class="price"> (6.2€)</span></p>
+                            <p>Salade, Tomate, Oeuf, Chèvre, Lardons chauds.</p>
+                        </div>
+                        <div class="menu-item">
+                            <p><span class="name">Prosciutto</span> <span class="price"> (6.5€)</span></p>
+                            <p>Salade, Tomate, Oeuf, Jambon Serrano, Grana Padano (Parmesan).</p>
+                        </div>
+                        <div class="menu-item">
+                            <p><span class="name">Nordique</span> <span class="price"> (6.5€)</span></p>
+                            <p>Salade, Tomate, Oeuf, Mozzarella, Saumon.</p>
+                        </div>
+                        <div class="menu-item">
+                            <p><span class="name">Pécorino</span> <span class="price"> (7€)</span></p>
+                            <p>Salade, Tomate, Oeuf, Jambon blanc, Pecorino à la Truffe.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carte-menu" id="complements">
+                <img src="public/pictos/desserts.png">
+                <h2>Nos Desserts</h2>
+                <div class="container-menu">
+                    <div class="menu-left">
+                        <div class="menu-item">
+                            <p><span class="name">Moelleux au Chocolat</span> <span class="price"> (2.5€)</span></p>
+                        </div>
+                        <div class="menu-item">
+                            <p><span class="name">Citron revisité</span> <span class="price"> (2.5€)</span></p>
+                        </div>
+                        <div class="menu-item">
+                            <p><span class="name">Suprême de Fruits Rouges</span> <span class="price"> (2.5€)</span></p>
+                        </div>
+                        <div class="menu-item">
+                            <p><span class="name">Yahourt</span> <span class="price"> (2.5€)</span></p>
+                        </div>
+                    </div>
+                </div>
+                <img src="public/pictos/boissons.png">
+                <h2>Nos Boissons</h2>
+                <div class="container-menu">
+                    <div class="menu-left">
+                        <div class="menu-item">
+                            <p><span class="name">Eau (50cl)</span> <span class="price"> (1€)</span></p>
+                            <p>Eau plate, Eau Gazeuse.</p>
+                        </div>
+                        <div class="menu-item">
+                            <p><span class="name">Sodas (33cl)</span> <span class="price"> (1€)</span></p>
+                            <p>Sprite, Ice Tea, Oasis, Coca Cola, Coca Cola Zero, Coca Cola Light, Coca Cola Cherry, Tropico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form id="contact">
+            <div class="stickers_">
+                <img src="public/images/stickers_.svg">
+            </div>
+            <div class="form-info">
+                <h2>Réservez, n'attendez plus.</h2>
+                <p>Envoyez nous un message ou contactez nous au 06 34 08 80 72</p>    
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Votre Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Votre Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Votre numéro de téléphone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="subject">Objet de votre message</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Envoyer le message</button>
+            </div>
+        </form>
+        <div class="footer" id="footer">
+            <div class="topfooter">
+                <img src="public/images/logo.svg">
+                <div class="links">
+                    <h3>Liens internes</h3>
+                    <p>Mentions légales</p>
+                    <p>Politique de confidentialité</p>
+                    <p>Gestion des Cookies</p>
+                </div>
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <p>1091 Route de Neufmesnil</p>
+                    <p>76570 Cideville (France)</p>
+                    <p>cyriller76@gmail.com</p>
+                    <p>+33 6 34 08 80 72</p>
+                </div>
+                <div class="credits">
+                    <h3>Nos réseaux</h3>
+                    <div class="social">
+                        <a class="ri-facebook-fill" href="https://facebook.com", target="_blank"> </a>
+                        <a class="ri-google-fill" href="https://www.google.com/search?q=foodtruck%20Cideville%20Route%20de%20Neufmesnil%201091"> </a>
+                    </div>
+                    <p>Réalisé avec ❤️ par Charly, Robin & Lucas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const burger = document.querySelector('.burger');
+        const burgerContent = document.querySelector('.burger-content');
+
+        burger.addEventListener('click', () => {
+            burgerContent.classList.toggle('show');
+        });
+
+        function closeBurger() {
+            burgerContent.classList.remove('show');
+        }
+
+        const links = document.querySelectorAll('.navbar a');
+        links.forEach(link => {
+            link.addEventListener('click', closeBurger);
+        });
+        
+        function scrollToContact() {
+          var element = document.getElementById("contact");
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+
+        var mybutton = document.getElementById("topBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+        accordionHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const accordionBody = this.nextElementSibling;
+            accordionBody.classList.toggle('visible');
+        });
+        });
+    </script>
+    </body>
+</html>
