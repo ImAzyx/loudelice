@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Loudelice - Foodtruck Normand aux menus variés</title>
+    <title>Loudelice, Foodtruck Normand aux menus variés</title>
     <link rel="shortcut icon" type="image/png" href="public/images/favicon.png"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,21 +15,27 @@
     <button onclick="topFunction()" id="topBtn" title="Go to top">Retour en haut</button>
     <div class="container">
         <div class="header">
-            <div class="brand">
-                <img src="public/images/logo-blanc.svg">
-            </div>
             <nav class="navbar">
-                <div class="navbar-left">
-                    <img src="public/images/logo-blanc.svg">
+                <div class="brand">
+                    <a href="index.html"><img src="public/images/logo-blanc.svg" href="index.html"></a>
                 </div>
                 <div class="navbar-center">
-                    <a href="#menu">Menu</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="#planning">Horaires</a>
+                    <a href="#about">A propos</a>
+                    <a href="#contact">Nous contacter</a>
+                </div>
+                <div class="burger-content">
+                    <a href="menu.html">Menu</a>
                     <a href="#planning">Horaires</a>
                     <a href="#about">A propos</a>
                     <a href="#contact">Nous contacter</a>
                 </div>
                 <div class="bouton">
                   <button onclick="scrollToContact()">Réserver</button>
+                </div>
+                <div class="burger">
+                    <a class="ri-menu-4-fill"></a>
                 </div>
               </nav>
             <div class="info-header">
@@ -54,7 +60,7 @@
             <p>Choisissez parmi les plats innombrables 
                 français et italiens et laissez-vous tenter.</p>
             <div class="bouton">
-                <button onclick="scrollToContact()">Réserver dès maintenant</button>
+                <a href="menu.html"><button>Voir les menus</button></a>
             </div>
             <img src="public/images/menus.png">
         </div>
@@ -115,7 +121,7 @@
                     gâteaux préparés avec amour vous rassasieront
                     pendant la pause.</p>
                 <div class="nbouton">
-                    <button onclick="scrollToContact()">Réserver</button>
+                    <a href="menu.html"><button onclick="scrollToContact()">Consulter la carte</button></a>
                 </div>
             </div>
             <img src="public/images/plate.png">
@@ -199,6 +205,22 @@
         </div>
     </div>
     <script>
+        const burger = document.querySelector('.burger');
+        const burgerContent = document.querySelector('.burger-content');
+
+        burger.addEventListener('click', () => {
+            burgerContent.classList.toggle('show');
+        });
+
+        function closeBurger() {
+            burgerContent.classList.remove('show');
+        }
+
+        const links = document.querySelectorAll('.navbar a');
+        links.forEach(link => {
+            link.addEventListener('click', closeBurger);
+        });
+
         function scrollToContact() {
           var element = document.getElementById("contact");
           element.scrollIntoView({ behavior: "smooth" });
