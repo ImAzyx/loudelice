@@ -14,6 +14,9 @@
   <body>
     <button onclick="topFunction()" id="topBtn" title="Go to top">Retour en haut</button>
     <div class="container">
+        <audio id="myAudio">
+            <source src="public/manu.m4a" type="audio/mpeg">
+        </audio>
         <div class="header">
             <nav class="navbar">
                 <div class="brand">
@@ -338,7 +341,7 @@
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" rows="5" cols="50" style="resize: none;"></textarea>
             </div>
             <div class="form-group">
                 <button type="submit">Envoyer le message</button>
@@ -372,6 +375,15 @@
         </div>
     </div>
     <script>
+        let soundPlayed = false;
+        window.addEventListener('scroll', () => {
+        const audio = document.querySelector('#myAudio');
+        if (!soundPlayed && window.pageYOffset >= 400 && window.pageYOffset < 500) {
+            audio.play();
+            soundPlayed = true;
+        }
+        });
+
         const burger = document.querySelector('.burger');
         const burgerContent = document.querySelector('.burger-content');
 
