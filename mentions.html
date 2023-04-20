@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loudelice, Foodtruck Normand aux menus variés</title>
+    <link rel="shortcut icon" type="image/png" href="public/images/favicon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Retour en haut</button>
+    <div class="container">
+        <div class="simple-header">
+            <nav class="navbar">
+                <div class="brand">
+                    <a href="index.html"><img src="public/images/logo-blanc.svg" href="index.html"></a>
+                </div>
+                <div class="navbar-center">
+                    <a href="menu.html">Menu</a>
+                    <a href="#planning">Horaires</a>
+                    <a href="#about">A propos</a>
+                    <a href="#contact">Nous contacter</a>
+                </div>
+                <div class="burger-content">
+                    <a href="menu.html">Menu</a>
+                    <a href="#planning">Horaires</a>
+                    <a href="#about">A propos</a>
+                    <a href="#contact">Nous contacter</a>
+                </div>
+                <div class="bouton">
+                  <button onclick="scrollToContact()">Réserver</button>
+                </div>
+                <div class="burger">
+                    <a class="ri-menu-4-fill"></a>
+                </div>
+              </nav>
+        </div>
+        <div class="services">
+            <h1>Mentions Légales</h1>
+            <p>Dernière vérification le 01 janvier 2023</p>
+        </div>
+        <div class="mentions">
+            <h3>Edition du Site</h3>
+                
+                Responsable éditorial : José Délice<br> Nom du propriétaire de l'entreprise : José Délice<br>Adresse postale de l'entreprise : 1091 ROUTE DE NEUFMESNIL 76570 CIDEVILLE France<br>Numéro de téléphone : +33634088072<br>Adresse e-mail : cyriller76@gmail.com<br></br>
+                
+                Hébergement : OVH SAS<br>Nom de l'hébergeur : OVH SAS<br>Adresse postale de l'hébergeur : 2 rue Kellermann – BP 80157 – 59053 Roubaix Cedex 1<br>Numéro de téléphone : 1007<br></br>
+                
+            <h3>Propriété intellectuelle et contrefaçons.</h3>
+                <b>Propriété intellectuelle :</b> L'ensemble des éléments du site (notamment les textes, graphismes, logos, icônes, images, fichiers audio ou vidéo, logiciels, mise en page, bases de données) ainsi que les contenus publiés sur le site sont protégés par le droit d'auteur et/ou le droit des marques. Ils sont la propriété exclusive du propriétaire de l'entreprise, à l'exception des éléments réalisés par des intervenants extérieurs au propriétaire de l'entreprise. Toute reproduction, représentation, utilisation, adaptation ou modification, partielle ou intégrale, de tout élément du site, par quelque procédé que ce soit, est strictement interdite, sauf autorisation écrite préalable du propriétaire de l'entreprise.<br></br>
+                
+                <b>Protection des données personnelles :</b> Le site web ne collecte aucune donnée personnelle à l'insu des visiteurs. Les informations recueillies via les formulaires de contact ou de commande sont strictement confidentielles et ne seront en aucun cas communiquées à des tiers sans autorisation préalable de l'utilisateur concerné. Conformément à la loi Informatique et Libertés du 6 janvier 1978, les visiteurs disposent d'un droit d'accès, de modification, de rectification et de suppression des données les concernant. Pour exercer ce droit, ils peuvent adresser une demande écrite à l'adresse postale de l'entreprise.<br></br>
+                
+                <b>Cookies :</b> Le site web peut utiliser des cookies afin de faciliter la navigation et l'utilisation des services proposés. Les cookies sont des fichiers de petite taille qui permettent de reconnaître les visiteurs lorsqu'ils reviennent sur le site. Les visiteurs peuvent refuser l'utilisation de cookies en modifiant les paramètres de leur navigateur internet.<br></br>
+                
+                <b>Responsabilité :</b> Le propriétaire de l'entreprise ne pourra en aucun cas être tenu responsable des dommages directs ou indirects résultant de l'utilisation du site web ou des informations qui y sont contenues. Les liens hypertextes présents sur le site renvoient vers d'autres sites web, sur lesquels le propriétaire de l'entreprise n'a aucun contrôle. Par conséquent, il ne pourra être tenu pour responsable du contenu de ces sites.<br></br>
+                
+            <h3>Droit applicable et attribution de juridiction.</h3>
+                <b>Droit applicable et juridiction compétente :</b> Les présentes mentions légales sont régies par le droit français. Tout litige relatif à l'utilisation du site web sera soumis à la compétence exclusive des tribunaux français.</p>
+        </div>
+        <div class="footer" id="footer">
+            <div class="topfooter">
+                <img src="public/images/logo.svg">
+                <div class="links">
+                    <h3>Liens internes</h3>
+                    <a href="mentions.html"><p>Mentions légales</p></a>
+                    <p>Politique de confidentialité</p>
+                    <p>Gestion des Cookies</p>
+                </div>
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <p>1091 Route de Neufmesnil</p>
+                    <p>76570 Cideville (France)</p>
+                    <p>cyriller76@gmail.com</p>
+                    <p>+33 6 34 08 80 72</p>
+                </div>
+                <div class="credits">
+                    <h3>Nos réseaux</h3>
+                    <div class="social">
+                        <a class="ri-facebook-fill" href="https://facebook.com", target="_blank"> </a>
+                        <a class="ri-google-fill" href="https://www.google.com/search?q=foodtruck%20Cideville%20Route%20de%20Neufmesnil%201091"> </a>
+                    </div>
+                    <p>Réalisé avec ❤️ par Charly, Robin & Lucas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const burger = document.querySelector('.burger');
+        const burgerContent = document.querySelector('.burger-content');
+
+        burger.addEventListener('click', () => {
+            burgerContent.classList.toggle('show');
+        });
+
+        function closeBurger() {
+            burgerContent.classList.remove('show');
+        }
+
+        const links = document.querySelectorAll('.navbar a');
+        links.forEach(link => {
+            link.addEventListener('click', closeBurger);
+        });
+
+        function scrollToContact() {
+          var element = document.getElementById("contact");
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+
+        var mybutton = document.getElementById("topBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+        accordionHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const accordionBody = this.nextElementSibling;
+            accordionBody.classList.toggle('visible');
+        });
+        });
+    </script>
+    </body>
+</html>

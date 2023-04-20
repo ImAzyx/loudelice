@@ -64,6 +64,18 @@
     overflow: hidden;
   }
 
+  .simple-header {
+    border-radius: 30px;
+    background-color:#F8854A;
+    color: white;
+    padding: 35px 105px;
+    margin-bottom: 30px;
+  }
+
+  .mentions {
+    margin:30px 0;
+  }
+
   .info-header {
     padding: 60px 60px 0px 60px;
     display: flex;
@@ -587,6 +599,14 @@
       .header img {
         width: 200%;
       }
+
+      .simple-header {
+        border-radius: 10px;
+        background-color:#F8854A;
+        color: white;
+        padding: 10px 30px;
+        margin-bottom: 20px;
+      }
     
       .info-header {
         padding: 25px 25px 0px 25px;
@@ -926,5 +946,5 @@
     .menu-item {
       padding-top: 10px;
     }
-
+    
 }
