@@ -17,6 +17,9 @@
         <audio id="myAudio">
             <source src="public/manu.m4a" type="audio/mpeg">
         </audio>
+        <audio id="mySlurp">
+            <source src="public/slurp.mp3" type="audio/mpeg">
+        </audio>
         <div class="header">
             <nav class="navbar">
                 <div class="brand">
@@ -42,7 +45,7 @@
                 </div>
               </nav>
             <div class="info-header">
-                <h1>L'heure est à la régalade !</h1>
+                <h1>L'heure est à la régalade&nbsp;!</h1>
                 <p>Découvrez notre menu, composé de délicieuses pizzas,
                      paninis, salades et de desserts faits maison.</p>
                 <img src="public/images/menus.png">
@@ -376,13 +379,20 @@
     </div>
     <script>
         let soundPlayed = false;
-        window.addEventListener('scroll', () => {
+        let SecondsoundPlayed = false;
         const audio = document.querySelector('#myAudio');
-        if (!soundPlayed && window.pageYOffset >= 400 && window.pageYOffset < 500) {
-            audio.play();
-            soundPlayed = true;
-        }
-        });
+        const saudio = document.querySelector('#mySlurp');
+
+        window.addEventListener('scroll', () => {
+            if (!SecondsoundPlayed && window.pageYOffset >= 2700 && window.pageYOffset < 2800) {
+                saudio.play();
+                SecondsoundPlayed = true;
+            }
+            if (!soundPlayed && window.pageYOffset >= 400 && window.pageYOffset < 500) {
+                audio.play();
+                soundPlayed = true;
+            }
+            });
 
         const burger = document.querySelector('.burger');
         const burgerContent = document.querySelector('.burger-content');
