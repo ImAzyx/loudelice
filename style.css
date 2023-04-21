@@ -103,6 +103,15 @@
     gap: 30px;
   }
 
+  .services h2 {
+    text-align: center;
+  }
+
+  .menus h2 {
+    color: white;
+    text-align: center;
+  }
+
   .menu-shortcut {
     display: flex;
     flex-direction: row;
